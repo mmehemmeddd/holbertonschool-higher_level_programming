@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-reqem=3,14
+reqem=3.14
 print(f'{reqem:.2f}')
