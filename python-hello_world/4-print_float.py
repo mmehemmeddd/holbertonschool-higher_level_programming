@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-reqem=3.14
-print(f'Float: {reqem:}')
+number=3.14
+print(f'Float: {number:.2f}')
