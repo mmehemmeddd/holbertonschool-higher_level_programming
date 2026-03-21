@@ -1,9 +1,7 @@
-
 #!/usr/bin/python3
+"""Module that computes the square of a matrix."""
+
+
 def square_matrix_simple(matrix=[]):
-    """
-    Computes the square value of all integers of a matrix.
-    Returns a new matrix with the squared values, leaving
-    the original unchanged.
-    """
+    """Returns a new matrix with squared values."""
     return [[x ** 2 for x in row] for row in matrix]
