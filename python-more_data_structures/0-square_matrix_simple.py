@@ -1,8 +1,9 @@
+
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
     """
     Computes the square value of all integers of a matrix.
-    Returns a new matrix with the squared values, leaving the original unchanged.
+    Returns a new matrix with the squared values, leaving
+    the original unchanged.
     """
-    # Create a new matrix using a nested list comprehension
-    return [[element ** 2 for element in row] for row in matrix]
+    return [[x ** 2 for x in row] for row in matrix]
