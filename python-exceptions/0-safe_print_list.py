@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Module that provides a function to safely print elements of a list.
+"""
+
+
 def safe_print_list(my_list=[], x=0):
     """
     Prints x elements of a list on the same line.
