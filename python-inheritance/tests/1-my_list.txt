@@ -1,0 +1,45 @@
+=========================================
+Testing the MyList class
+=========================================
+
+First, we need to import the class MyList:
+
+    >>> MyList = __import__('1-my_list').MyList
+
+Now, let's create a new list and add positive numbers:
+
+    >>> my_list = MyList()
+    >>> my_list.append(1)
+    >>> my_list.append(4)
+    >>> my_list.append(2)
+    >>> my_list.append(3)
+    >>> my_list.append(5)
+    >>> print(my_list)
+    [1, 4, 2, 3, 5]
+    >>> my_list.print_sorted()
+    [1, 2, 3, 4, 5]
+    >>> print(my_list)
+    [1, 4, 2, 3, 5]
+
+Now let's test with negative numbers:
+
+    >>> my_list2 = MyList()
+    >>> my_list2.append(2)
+    >>> my_list2.append(-5)
+    >>> my_list2.append(0)
+    >>> my_list2.append(-10)
+    >>> my_list2.append(4)
+    >>> print(my_list2)
+    [2, -5, 0, -10, 4]
+    >>> my_list2.print_sorted()
+    [-10, -5, 0, 2, 4]
+    >>> print(my_list2)
+    [2, -5, 0, -10, 4]
+
+Now let's test with an empty list:
+
+    >>> my_list3 = MyList()
+    >>> print(my_list3)
+    []
+    >>> my_list3.print_sorted()
+    []
