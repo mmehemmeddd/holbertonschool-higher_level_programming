@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Bu modul verilmiş mətn faylını oxumaq və 
+Bu modul verilmiş mətn faylını oxumaq və
 onun məzmununu ekrana yazdırmaq üçün nəzərdə tutulub.
 """
 
