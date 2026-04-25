@@ -1,12 +1,14 @@
 #!/usr/bin/python3
 """
-Bu modul verilmiş mətn faylını oxumaq və
-onun məzmununu ekrana yazdırmaq üçün nəzərdə tutulub.
+Bu modul verilmiş mətni (string) mətn faylına yazmaq
+və yazılmış simvolların sayını qaytarmaq üçündür.
 """
+
+
 def write_file(filename="", text=""):
     """
-    Bu funksiya faylın adını qəbul edir, onu utf-8 formatında açır
-    və məzmununu olduğu kimi ekrana (stdout) çap edir.
+    Mətni fayla utf-8 formatında yazır və yazılan simvolların sayını qaytarır.
+    Fayl yoxdursa yaradır, varsa məzmununu silib yenidən yazır.
     """
-    with open(filename, encoding="utf-8") as f:
+    with open(filename, mode="w", encoding="utf-8") as f:
         return f.write(text)
