@@ -1,0 +1,21 @@
+
+3. To JSON string
+
+Write a function that returns the JSON representation of an object (string):
+
+    Prototype: def to_json_string(my_obj):
+    You don't need to manage exceptions if the object can't be serialized.
+#!/usr/bin/python3
+"""
+Bu modul Python obyektini JSON formatında olan bir sətirə (string)
+çevirmək üçün nəzərdə tutulub.
+"""
+import json
+
+
+def to_json_string(my_obj):
+    """
+    Verilmiş obyekti (my_obj) qəbul edir və onun 
+    JSON formatında olan string (mətn) versiyasını qaytarır.
+    """
+    return json.dumps(my_obj)t
