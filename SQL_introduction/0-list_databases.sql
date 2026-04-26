@@ -1,2 +1,3 @@
-#!/usr/bin/python3
+-- Displays all databases
+-- Query to display databases
 SHOW DATABASES;
