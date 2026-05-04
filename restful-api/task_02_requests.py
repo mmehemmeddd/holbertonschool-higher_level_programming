@@ -1,6 +1,3 @@
-#!/usr/bin/python3
-"""i send api with requests"""
-print(response.status_code)
 import requests
 import csv
 
@@ -27,7 +24,6 @@ def fetch_and_save_posts():
     if response.status_code == 200:
         data = response.json()
 
-        # CSV üçün struktur hazırlamaq
         posts = []
         for post in data:
             posts.append({
@@ -36,7 +32,6 @@ def fetch_and_save_posts():
                 "body": post["body"]
             })
 
-        # CSV yazmaq
         with open("posts.csv", "w", newline="", encoding="utf-8") as file:
             writer = csv.DictWriter(file, fieldnames=["id", "title", "body"])
             writer.writeheader()
@@ -45,7 +40,6 @@ def fetch_and_save_posts():
         print("Request failed")
 
 
-# Test
 if __name__ == "__main__":
     fetch_and_print_posts()
     fetch_and_save_posts()
