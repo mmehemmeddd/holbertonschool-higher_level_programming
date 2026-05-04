@@ -2,7 +2,7 @@
 """ i would like create mini web site api"""
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
-Class SimpleApi(BaseHTTPRequestHandler):
+class SimpleApi(BaseHTTPRequestHandler):
     def do_GET(self):
         # / endpoint
         if self.path == "/":
