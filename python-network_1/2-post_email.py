@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""POST an email to a URL using urllib"""
+
 import sys
 import urllib.request
 import urllib.parse
@@ -12,5 +14,4 @@ if __name__ == "__main__":
     req = urllib.request.Request(url, data)
 
     with urllib.request.urlopen(req) as response:
-        body = response.read()
-        print(body.decode("utf-8"))
+        print(response.read().decode("utf-8"))
